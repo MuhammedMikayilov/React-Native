@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { SearchBar } from "react-native-screens";
+import Icon from "react-native-vector-icons/FontAwesome";
 import { Colors } from "../../constants/Colors";
 import Accounts from "./Accounts";
 import Home from "./Home/Home";
@@ -16,10 +16,21 @@ export default function Pages() {
             backgroundColor: Colors.secondaryColor,
           },
           headerShown: false,
+          tabBarIcon: ({ tintColor }) => (
+            <Icon name="home" size={30} color={Colors.secondaryColor} />
+          ),
         }}
         component={Home}
       />
-      <Tab.Screen name="Accounts" component={Accounts} />
+      <Tab.Screen
+        name="Accounts"
+        component={Accounts}
+        options={{
+          tabBarIcon: ({ tintColor }) => (
+            <Icon name="user" size={30} color={Colors.secondaryColor} />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 }
