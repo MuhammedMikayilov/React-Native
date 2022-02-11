@@ -7,7 +7,9 @@ export const globalStyles = StyleSheet.create({
   },
   wrapper: {
     width: "90%",
-    margin: "5%",
+    marginLeft: "5%",
+    marginRight: "5%",
+    overflow: "hidden",
   },
 
   buttons: {
@@ -23,5 +25,18 @@ export const globalStyles = StyleSheet.create({
     paddingBottom: 18,
     fontSize: 16,
     textAlign: "center",
+  },
+
+  row: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: -12,
+    marginRight: -12,
+  },
+
+  col_6: {
+    width: "50%",
+    paddingLeft: 12,
+    paddingRight: 12,
   },
 });
