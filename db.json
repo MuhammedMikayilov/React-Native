@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "Muhammed",
+      "surname": "Mikayilov",
+      "username": "MuhammedMikayilov",
+      "pass": "123456",
+      "email": "test@gmail.com",
+      "avatar": "https://drive-my.com/wp-content/uploads/importedmedia/1116"
+    },
+    {
+      "id": "2",
+      "firstname": "Muhammed",
+      "surname": "Mikayilov",
+      "username": "MMikayilov",
+      "pass": "123456",
+      "email": "testtwo@gmail.com",
+      "avatar": "https://drive-my.com/wp-content/uploads/importedmedia/1117"
+    }
+  ],
+
+  "products": [
+    {
+      "drinks": [
+        {
+          "name": "CocaCola",
+          "size": "small",
+          "price": 2,
+          "currency": "AZN"
+        },
+        {
+          "name": "Pepsi",
+          "size": "small",
+          "price": 2,
+          "currency": "AZN"
+        }
+      ]
+    }
+  ]
+}
