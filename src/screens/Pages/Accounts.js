@@ -1,9 +1,10 @@
 import React from "react";
 import { useUserContxt } from "../../context/UserContex";
 import { View, Text, Image, ScrollView } from "react-native";
+import Button from "../../components/Button";
 
 const Accounts = (props) => {
-  const { user } = useUserContxt();
+  const { user, setUser } = useUserContxt();
   return (
     <ScrollView>
       <View style={{ marginLeft: "40%", marginTop: 20 }}>
@@ -13,6 +14,13 @@ const Accounts = (props) => {
         />
         <Text>{user?.firstname}</Text>
       </View>
+
+      <Button
+        text={"LOG OUT"}
+        onPress={() => {
+          setUser();
+        }}
+      />
     </ScrollView>
   );
 };

@@ -1,12 +1,11 @@
 import React from "react";
-import { useUserContxt } from "../../../context/UserContex";
 import { View, Text, Image, ScrollView, TextInput } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { styles } from "./style";
 import { globalStyles } from "../../../constants/GlobalStyle";
 import { getAllProducts } from "./actions";
 
-const Home = (props) => {
+const Home = () => {
   const [products, setProducts] = React.useState([]);
   const [searched, setSearched] = React.useState("");
   const titles = ["Drinks", "Foods"];

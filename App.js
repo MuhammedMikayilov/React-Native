@@ -15,7 +15,7 @@ const MainStack = createNativeStackNavigator();
 const ProtectedUser = () => {
   const { user } = useUserContxt();
 
-  if (!user) {
+  if (user) {
     return (
       <NavigationContainer>
         <MainStack.Navigator>
