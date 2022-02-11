@@ -3,26 +3,25 @@ import { Colors } from "../../../constants/Colors";
 
 export const styles = StyleSheet.create({
   header: {
-    flex: 1,
-    // display: "flex",
+    display: "flex",
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: Colors.primaryColor,
     padding: 10,
-    // paddingRight: 20,
   },
 
   search_bar: {
     marginLeft: 20,
     backgroundColor: "#fff",
     width: "80%",
-    height: "100%",
+    // height: "100%",
     padding: 5,
   },
 
   img: {
     marginTop: 25,
     position: "relative",
+    maxWidth: "100%",
   },
 
   img_txt: {
